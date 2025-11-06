@@ -28,14 +28,34 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(59, 130, 246, 0.2);
         }
+        
+        /* Desktop PDF viewer */
         .pdf-container {
             width: 100%;
             height: calc(100vh - 200px);
             min-height: 600px;
         }
+        
+        /* Mobile optimizations */
         @media (max-width: 768px) {
+            /* Hide PDF viewer on mobile, show mobile-friendly view instead */
             .pdf-container {
-                height: calc(100vh - 250px);
+                display: none;
+            }
+            
+            .mobile-resume-view {
+                display: block !important;
+            }
+            
+            .desktop-fallback {
+                display: none !important;
+            }
+        }
+        
+        /* Show PDF on desktop, hide mobile view */
+        @media (min-width: 769px) {
+            .mobile-resume-view {
+                display: none !important;
             }
         }
     </style>
@@ -44,16 +64,16 @@
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-effect">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
+            <div class="flex items-center justify-between h-auto md:h-16 py-3 md:py-0">
                 <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-blue-400">TC</a>
+                    <a href="index.html" class="text-xl md:text-2xl font-bold text-blue-400">TC</a>
                 </div>
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="text-gray-300 hover:text-blue-400 px-3 py-2 transition">
-                        ← Back to Portfolio
+                <div class="flex items-center space-x-2 md:space-x-4">
+                    <a href="index.html" class="text-gray-300 hover:text-blue-400 px-2 md:px-3 py-2 transition text-sm md:text-base">
+                        ← Back
                     </a>
-                    <a href="Trevor_Cooley_resume.pdf" download class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">
-                        Download PDF
+                    <a href="Trevor_Cooley_resume.pdf" download class="bg-blue-600 hover:bg-blue-700 text-white px-3 md:px-4 py-2 rounded-lg transition text-sm md:text-base">
+                        Download
                     </a>
                 </div>
             </div>
@@ -61,13 +81,14 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="pt-24 pb-8 px-4">
+    <div class="pt-20 md:pt-24 pb-8 px-4">
         <div class="max-w-6xl mx-auto">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4 text-center">Resume</h1>
-            <p class="text-gray-300 text-center mb-8">Trevor Cooley</p>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 md:mb-4 text-center">Resume</h1>
+            <p class="text-gray-300 text-center mb-4 md:mb-8 text-sm md:text-base">Trevor Cooley</p>
             
-            <!-- PDF Viewer -->
-            <div class="glass-effect rounded-lg p-4">
+            <!-- PDF Viewer Container -->
+            <div class="glass-effect rounded-lg p-2 md:p-4">
+                <!-- Desktop: PDF Viewer -->
                 <iframe 
                     src="Trevor_Cooley_resume.pdf" 
                     class="pdf-container w-full rounded"
@@ -75,12 +96,28 @@
                     title="Resume PDF">
                 </iframe>
                 
-                <!-- Fallback message for mobile or if PDF doesn't load -->
-                <div class="text-center mt-4">
+                <!-- Mobile: Card with download button -->
+                <div class="mobile-resume-view hidden">
+                    <div class="text-center py-12 md:py-16">
+                        <svg class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <h2 class="text-xl md:text-2xl font-bold text-white mb-3">View My Resume</h2>
+                        <p class="text-gray-300 mb-6 px-4 text-sm md:text-base">
+                            Download the PDF to view my complete resume on your device
+                        </p>
+                        <a href="Trevor_Cooley_resume.pdf" download class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition transform hover:scale-105 text-base md:text-lg font-semibold">
+                            Download Resume PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Fallback message (shown on desktop if PDF doesn't load) -->
+                <div class="text-center mt-4 desktop-fallback">
                     <p class="text-gray-400 text-sm mb-2">
                         Can't view the PDF? 
                     </p>
-                    <a href=Trevor_Cooley_resume.pdf" download class="text-blue-400 hover:text-blue-300 underline">
+                    <a href="Trevor_Cooley_resume.pdf" download class="text-blue-400 hover:text-blue-300 underline">
                         Click here to download
                     </a>
                 </div>
@@ -89,9 +126,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="glass-effect py-6 mt-8">
+    <footer class="glass-effect py-4 md:py-6 mt-8">
         <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-gray-400">
+            <p class="text-gray-400 text-xs md:text-base">
                 © 2024 Trevor Cooley. Built with React & Tailwind CSS.
             </p>
         </div>
