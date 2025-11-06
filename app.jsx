@@ -23,6 +23,7 @@ const Navigation = () => {
                             <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-blue-400 px-3 py-2 transition">About</button>
                             <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-blue-400 px-3 py-2 transition">Projects</button>
                             <button onClick={() => scrollToSection('skills')} className="text-gray-300 hover:text-blue-400 px-3 py-2 transition">Skills</button>
+                            <a href="resume.html" className="text-gray-300 hover:text-blue-400 px-3 py-2 transition">Resume</a>
                             <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-blue-400 px-3 py-2 transition">Contact</button>
                         </div>
                     </div>
@@ -44,6 +45,7 @@ const Navigation = () => {
                         <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-blue-400 block px-3 py-2 w-full text-left">About</button>
                         <button onClick={() => scrollToSection('projects')} className="text-gray-300 hover:text-blue-400 block px-3 py-2 w-full text-left">Projects</button>
                         <button onClick={() => scrollToSection('skills')} className="text-gray-300 hover:text-blue-400 block px-3 py-2 w-full text-left">Skills</button>
+                        <a href="resume.html" className="text-gray-300 hover:text-blue-400 block px-3 py-2">Resume</a>
                         <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-blue-400 block px-3 py-2 w-full text-left">Contact</button>
                     </div>
                 </div>
@@ -209,16 +211,16 @@ const Contact = () => {
                         I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
                     </p>
                     <div className="flex flex-col md:flex-row gap-4 justify-center">
-                        <a href="mailto:your.email@example.com" 
+                        <a href="mailto:trevordcooley@gmail.com" 
                            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
                             Email Me
                         </a>
-                        <a href="https://github.com/yourusername" 
+                        <a href="https://github.com/trevordc1" 
                            target="_blank"
                            className="glass-effect text-blue-300 px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
                             GitHub
                         </a>
-                        <a href="https://linkedin.com/in/yourusername" 
+                        <a href="https://linkedin.com/in/tdcooley" 
                            target="_blank"
                            className="glass-effect text-blue-300 px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
                             LinkedIn
