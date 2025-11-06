@@ -88,6 +88,7 @@ const About = () => {
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">About Me</h2>
                 <div className="glass-effect p-8 rounded-lg">
                     <p className="text-gray-300 text-lg mb-4">
+                        Put this section last and projects first cus who cares lol
                         Hi! I'm Trevor Cooley, a passionate developer who loves creating innovative solutions to complex problems. 
                         With a strong foundation in both frontend and backend technologies, I specialize in building scalable 
                         web applications that deliver exceptional user experiences.
