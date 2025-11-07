@@ -237,7 +237,7 @@ const Footer = () => {
         <footer className="glass-effect py-6">
             <div className="max-w-7xl mx-auto px-4 text-center">
                 <p className="text-gray-400">
-                    © 2024 Trevor Cooley. Built with React & Tailwind CSS.
+                    © 2025 Trevor Cooley. Built with React & Tailwind CSS.
                 </p>
             </div>
         </footer>
