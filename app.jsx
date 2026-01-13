@@ -180,19 +180,24 @@ const About = () => {
         <section id="about" className="min-h-screen flex items-center justify-center px-4 py-15">
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-8 text-center">About Me</h2>
-                <div className="glass-effect p-8 rounded-lg">
-                    <p className="text-gray-300 text-lg mb-4">
-                        Put this section last and projects first cus who cares lol
-                        web applications that deliver exceptional user experiences.
-                    </p>
-                    <p className="text-gray-300 text-lg mb-4">
-                        I'm constantly learning and exploring new technologies to stay at the forefront of web development. 
-                        When I'm not coding, you can find me contributing to open-source projects or experimenting with the 
-                        latest frameworks and tools.
-                    </p>
-                    <p className="text-gray-300 text-lg">
-                        Let's build something amazing together!
-                    </p>
+                    <div className="glass-effect p-8 rounded-lg">
+                    <div>
+                                        <p className="text-gray-300 text-lg mb-4">
+                        I design and build full-stack applications, work
+                          directly with databases and data pipelines, and develop performant
+                          software across multiple platforms and languages that deliver exceptional user experiences.
+                        </p>
+                        <p className="text-gray-300 text-lg mb-4">
+                        I’m constantly learning, refining, and experimenting — whether that means
+                          architecting backend systems, optimizing performance, staying at the forefront of web development or building native
+                          and low-level applications.
+                            When I'm not coding, you can find me contributing to open-source projects or experimenting with the 
+                            latest frameworks and tools.
+                        </p>
+                        <p className="text-gray-300 text-lg">
+                            Let's build something amazing together!
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -206,22 +211,24 @@ const Contact = () => {
             <div className="max-w-4xl mx-auto w-full">
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">Get In Touch</h2>
                 <div className="glass-effect p-8 rounded-lg">
-                    <div>
-                                        <p className="text-gray-300 text-lg mb-4">
-                        I design and build full-stack applications, work
-                          directly with databases and data pipelines, and develop performant
-                          software across multiple platforms and languages that deliver exceptional user experiences.
+                    <p className="text-gray-300 text-lg mb-8 text-center">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
                     </p>
-                    <p className="text-gray-300 text-lg mb-4">
-                    I’m constantly learning, refining, and experimenting — whether that means
-                      architecting backend systems, optimizing performance, staying at the forefront of web development or building native
-                      and low-level applications.
-                        When I'm not coding, you can find me contributing to open-source projects or experimenting with the 
-                        latest frameworks and tools.
-                    </p>
-                    <p className="text-gray-300 text-lg">
-                        Let's build something amazing together!
-                    </p>
+                    <div className="flex flex-col md:flex-row gap-4 justify-center">
+                        <a href="mailto:trevordcooley@gmail.com" 
+                           className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
+                            Email Me
+                        </a>
+                        <a href="https://github.com/trevordc1" 
+                           target="_blank"
+                           className="glass-effect text-blue-300 px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
+                            GitHub
+                        </a>
+                        <a href="https://linkedin.com/in/tdcooley" 
+                           target="_blank"
+                           className="glass-effect text-blue-300 px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
+                            LinkedIn
+                        </a>
                     </div>
                 </div>
             </div>
