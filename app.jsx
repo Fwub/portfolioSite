@@ -96,7 +96,7 @@ const Projects = () => {
             link: "fastidious-cobbler-f86af4.netlify.app"
         },
         {
-            title: "Sports Bar Manager Linux Module",
+            title: "Sports Bar Manager Linux Kernel Module",
             description: "A low-level systems project implementing a concurrent sports bar management simulation. \n\n(Private app link not available)",
             tech: ["C", "Linux Kernel Development", "System Calls", "Mutex Locks", "Kernel Threads (kthreads)"],
             link: "#"
