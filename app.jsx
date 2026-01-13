@@ -91,13 +91,13 @@ const Projects = () => {
         },
         {
             title: "Ecommerce InventoryShop App",
-            description: "An e-commerce platform with advanced filtering, payment integration, admin dashboard, and scalable API-driven inventory synchronization..",
+            description: "An e-commerce platform with advanced filtering, payment integration, admin dashboard, and scalable API-driven inventory synchronization.",
             tech: ["C#", ".NET MAUI", "MVVM Architecture", "REST APIs", "Swagger / OpenAPI", "Distributed Systems", "CRUD"],
             link: "fastidious-cobbler-f86af4.netlify.app"
         },
         {
             title: "Sports Bar Manager Linux Module",
-            description: "A low-level systems project implementing a concurrent sports bar management simulation. (Private app link not available)",
+            description: "A low-level systems project implementing a concurrent sports bar management simulation. \n\n(Private app link not available)",
             tech: ["C", "Linux Kernel Development", "System Calls", "Mutex Locks", "Kernel Threads (kthreads)"],
             link: "#"
         }
