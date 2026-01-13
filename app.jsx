@@ -98,7 +98,7 @@ const Projects = () => {
         {
             title: "Sports Bar Manager Linux Module",
             description: "A low-level systems project implementing a concurrent sports bar management simulation. (Private app link not available)",
-            tech: ["C", "Linux Kernel Development", "System Calls", "Kernel Threads (kthreads)", "Mutex Locks"],
+            tech: ["C", "Linux Kernel Development", "System Calls", "Mutex Locks", "Kernel Threads (kthreads)"],
             link: "#"
         }
     ];
