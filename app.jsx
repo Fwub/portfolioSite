@@ -206,6 +206,7 @@ const Contact = () => {
             <div className="max-w-4xl mx-auto w-full">
                 <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 text-center">Get In Touch</h2>
                 <div className="glass-effect p-8 rounded-lg">
+                    <div>
                                         <p className="text-gray-300 text-lg mb-4">
                         I design and build full-stack applications, work
                           directly with databases and data pipelines, and develop performant
