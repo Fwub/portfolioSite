@@ -84,21 +84,21 @@ const Hero = () => {
 const Projects = () => {
     const projects = [
         {
-            title: "Project One",
-            description: "A full-stack web application built with React and Node.js, featuring real-time data synchronization and responsive design.",
-            tech: ["React", "Node.js", "MongoDB"],
-            link: "#"
+            title: "AI Music Database Recommendation System",
+            description: "A data-intensive full-stack web application that analyzes over one million songs to deliver fast, thematic music recommendations using optimized database design and clustering algorithms.",
+            tech: ["Python", "Flask", "PostgreSQL", "HTML", "CSS", "Javascript"],
+            link: "https://ai-music-database.onrender.com/"
         },
         {
-            title: "Project Two",
-            description: "An e-commerce platform with advanced filtering, payment integration, and admin dashboard for inventory management.",
-            tech: ["Next.js", "TypeScript", "PostgreSQL"],
-            link: "#"
+            title: "Ecommerce InventoryShop App",
+            description: "An e-commerce platform with advanced filtering, payment integration, admin dashboard, and scalable API-driven inventory synchronization..",
+            tech: ["C#", ".NET MAUI", "MVVM Architecture", "REST APIs", "Swagger / OpenAPI", "Distributed Systems", "CRUD"],
+            link: "fastidious-cobbler-f86af4.netlify.app"
         },
         {
-            title: "Project Three",
-            description: "A mobile-first social media application with user authentication, real-time messaging, and cloud storage integration.",
-            tech: ["React Native", "Firebase", "Redux"],
+            title: "Sports Bar Manager Linux Module",
+            description: "A low-level systems project implementing a concurrent sports bar management simulation. (Private app link not available)",
+            tech: ["C", "Linux Kernel Development", "System Calls", "Kernel Threads (kthreads)", "Mutex Locks"],
             link: "#"
         }
     ];
