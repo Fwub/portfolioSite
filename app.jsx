@@ -135,19 +135,19 @@ const Skills = () => {
     const skillCategories = [
         {
             category: "Frontend",
-            skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "HTML/CSS"]
+            skills: ["React", "Next.js", "C#", ".NET (MAUI, Core)", "TypeScript", "Tailwind CSS", "Javascript", "HTML/CSS", "React Native", "XAML", "XML"]
         },
         {
             category: "Backend",
-            skills: ["Node.js", "Express", "Python", "RESTful APIs", "GraphQL"]
+            skills: ["C/C++", "Node.js", "Express", "Python", "RESTful APIs", "GraphQL", "Flask", "Java"]
         },
         {
             category: "Database",
-            skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
+            skills: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase", "SQL", "NoSQL"]
         },
         {
             category: "Tools & Others",
-            skills: ["Git", "Docker", "AWS", "CI/CD", "Agile"]
+            skills: ["Git", "Github", "Docker", "AWS", "Azure", "Kubernetes", "CI/CD", "Agile", "Linux/Unix", "Numpy"]
         }
     ];
 
@@ -219,7 +219,7 @@ const Contact = () => {
                            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
                             Email Me
                         </a>
-                        <a href="https://github.com/trevordc1" 
+                        <a href="https://github.com/CodingTC" 
                            target="_blank"
                            className="glass-effect text-blue-300 px-8 py-3 rounded-lg text-center transition transform hover:scale-105">
                             GitHub
